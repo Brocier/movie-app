@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 class Movie extends Component {
   render() {
     return (
-      <div>Ima Movie!</div>
+      <div>Movie!</div>
     )
   }
 }
 
-export default Movie;
+export default Movie
