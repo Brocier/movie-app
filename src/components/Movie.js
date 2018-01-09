@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import MoviesList from './MoviesList.js'
-
 class Movie extends Component {
   render() {
     return (

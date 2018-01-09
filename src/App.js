@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Movie from './components/Movie.js'
 import MoviesList from './components/MoviesList.js'
 import './App.css';
 
@@ -13,8 +12,15 @@ class App extends Component {
       { title: 'A Third Movie', rating: 'PG', description: 'this is yet another movie' },
     ]
 
+    const isLoggedIn = true
+
     return (
-      <MoviesList movies={movies} />
+      <div>
+        <div>
+          The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
+        </div>
+        <MoviesList movies={movies} />
+      </div>
     );
   }
 }
